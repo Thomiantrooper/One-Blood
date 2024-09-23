@@ -1,0 +1,300 @@
+body {
+  background-color: #a1292a;
+}
+
+#{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li, a, button{
+  font-family: "	Copperplate",fantasy;
+  font-weight: 100;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 10%;
+}
+
+.logo{
+  width: 110px;
+  height: 110px; 
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.nav_links{
+  list-style: none;
+
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 1px 2px;
+  
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: rgb(239, 68, 102);
+}
+
+button{
+  background-color: pink;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  
+}
+
+button:hover:not(.active1){
+  background-color: white;
+  
+}
+
+.active1{
+  border-radius:50px;
+  padding: 2px;
+  
+  }
+
+.container {
+  position: relative;
+}
+
+
+
+.r{
+  margin-top: 10px; /* Adjust the top margin */
+  margin-right: 400px; /* Adjust the right margin */
+  margin-bottom: 30px; /* Adjust the bottom margin */
+  margin-left: 1px; /* Adjust the left margin */
+  transform: translateY(30px);  
+}
+.s{
+  transform: translateX(250px); 
+}
+
+.q{
+  position: relative;
+  left: 800px;
+  transform: translateY(-30px);
+  
+}
+.font-sizetop{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.ol{
+  background-color: #dab7b1;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.image-container img {
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.5;
+}
+
+.forimage{
+  transform: translateY(4px);
+}
+.icon{
+  position: absolute;
+  top:10px;
+  right:80px;
+}
+  
+.slider
+{
+  position: absolute;
+  top:150px;
+   overflow: hidden; 
+   opacity: 0.5;
+   width:1333px;
+   height: 1500px;
+   margin: 1px;
+
+}
+
+ 
+.slider figure
+{
+    position: relative;
+    width:500%;
+    margin:0;
+    left:0; 
+    animation: 20s slider infinite;
+}
+.slider figure img
+{
+    float: left;
+    width: 20%;
+
+}
+
+@keyframes  slider 
+{
+     0%{
+        left: 0%;
+     }
+     20%{
+        left: 0%;
+     }
+     25%{
+        left: -100%;
+     }
+     45%{
+        left: -100%;
+     }
+     50%{
+      left: -200%;
+   }
+   70%{
+      left: -200%;
+   }
+   75%{
+      left: -300%;
+   }
+   95%{
+      left: -300%;
+   }
+   100%{
+      left: -400%;
+   }
+    
+
+}
+
+.appointment-topic{
+  position: absolute;
+  top:180px;
+  right: 360px;
+  width: 45%;
+  height: 770px;
+  background-color: #dab7b1;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.appointment{
+  width: 550px;
+  position:absolute;
+  top:220px;
+  left:412px;
+  color: black;
+  background-color: rgba(255,255,255,0.2);
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+
+.form-group {
+  margin-bottom: 10px;
+}
+.reportbox{
+  position: absolute;
+  top:270px;
+  left:60px;
+  width: 400px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px;
+}
+.declaration {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.submit-buttons {
+  position: absolute;
+  top:680px;
+  right:1px;
+}
+
+
+form input[type="email"],
+form input[type="text"],
+form input[type="tel"]
+ {
+  align-items: center;
+  width: 400px;
+  height: 40px;
+  font-size: 16px; 
+  
+}
+
+.option{
+  height: 30px;
+  width: 100px;
+}
+input[type="submit"] {
+  background-color: #a1292a;
+  color: black;
+  font-size: 18px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+input[type="reset"] {
+  background-color: #a1292a;
+  color: black;
+  font-size: 18px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+
+.boxfortext{
+  background-color: rgb(211, 207, 207);
+  position:absolute;
+  top: 1020px;
+  right:0px ;
+  width: 100%;
+  
+      
+}
+.textbox{
+  position: absolute;
+  top:400x;
+  left:10px;
+  font-size: 50px;
+  margin-bottom:40px;
+
+
+}

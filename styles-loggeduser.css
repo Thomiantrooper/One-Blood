@@ -1,0 +1,396 @@
+body {
+    background-color: #a1292a;
+  }
+  
+  #{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li, a, button{
+    font-family: "	Copperplate",fantasy;
+    font-weight: 100;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10%;
+  }
+  
+  .logo{
+    width: 110px;
+    height: 110px; 
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+  .nav_links{
+    list-style: none;
+  
+  }
+  
+  .nav_links li{
+    display: inline-block;
+    padding: 1px 2px;
+    
+  }
+  
+  .nav_links li a{
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav_links li a:hover{
+    color: rgb(239, 68, 102);
+  }
+  
+  button{
+    background-color: pink;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    
+  }
+  
+  button:hover:not(.active1){
+    background-color: white;
+    
+  }
+  
+  .active1{
+    border-radius:50px;
+    padding: 2px;
+    
+    }
+  
+  .container {
+    position: relative;
+  }
+  
+  
+  
+  .r{
+    margin-top: 10px; /* Adjust the top margin */
+    margin-right: 400px; /* Adjust the right margin */
+    margin-bottom: 30px; /* Adjust the bottom margin */
+    margin-left: 1px; /* Adjust the left margin */
+    transform: translateY(30px);  
+  }
+  .s{
+    transform: translateX(250px); 
+  }
+  
+  .q{
+    position: relative;
+    left: 800px;
+    transform: translateY(-30px);
+    
+  }
+  .font-sizetop{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+  
+  .ol{
+    background-color: #dab7b1;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+  }
+  
+  .forimage{
+    transform: translateY(4px);
+  }
+  .icon{
+    position: absolute;
+    top:10px;
+    right:80px;
+  }
+    
+  .slider
+  {
+     overflow: hidden; 
+     opacity: 0.5;
+     height: 300%;
+     margin: 1px;
+  
+  }
+  
+   
+  .slider figure
+  {
+      position: relative;
+      width:800%;
+      margin:0;
+      left:0; 
+      animation: 20s slider infinite;
+  }
+  .slider figure img
+  {
+      float: left;
+      width: 50%;
+  
+  }
+  
+  @keyframes  slider 
+  {
+       0%{
+          left: 0%;
+       }
+       20%{
+          left: 0%;
+       }
+       25%{
+          left: -100%;
+       }
+       45%{
+          left: -100%;
+       }
+       50%{
+        left: -200%;
+     }
+     70%{
+        left: -200%;
+     }
+     75%{
+        left: -300%;
+     }
+     95%{
+        left: -300%;
+     }
+     100%{
+        left: -400%;
+     }
+    } 
+    .boxforimage1{
+
+      width: 45%;
+      height:300px;
+      position: absolute;
+      top: 200px;
+      left:100px;
+      }
+      .image1-box{
+        width:150%;
+        height: 300px;
+      }
+
+        .slider
+  {
+     overflow: hidden; 
+     opacity: 0.8;
+     height: 200%;
+     margin: 1px;
+  
+  }
+  
+   
+  .slider figure
+  {
+      position: relative;
+      width:500%;
+      margin:0;
+      left:0; 
+      animation: 20s slider infinite;
+  }
+  .slider figure img
+  {
+      float: left;
+      width: 20%;
+  
+  }
+  
+  @keyframes  slider 
+  {
+       0%{
+          left: 0%;
+       }
+       20%{
+          left: 0%;
+       }
+       25%{
+          left: -100%;
+       }
+       45%{
+          left: -100%;
+       }
+       50%{
+        left: -200%;
+     }
+     70%{
+        left: -200%;
+     }
+     75%{
+        left: -300%;
+     }
+     95%{
+        left: -300%;
+     }
+     100%{
+        left: -400%;
+     }
+      }
+      .boxfortext{
+        background-color: rgb(254, 113, 113);
+        width: 30%;
+        height:300px;
+        position:absolute;
+        top:200px;
+        right:100px;
+        
+        }
+      
+        .text-box{
+          position: absolute;
+          top:5px;
+          left:10px;
+          font-size: 50px;
+        }
+        .text{
+          color: black;
+          width: 190px;
+          position: absolute;
+          top:250px;
+          right:250px;
+          font-size: 40px;
+        }
+      
+        .boxformessage{
+          background-color: rgb(254, 113, 113);
+          width: 45%;
+          height:300px;
+          position: absolute;
+          top:600px;
+          left:100px;
+
+        }
+        .text-2box{
+          position: absolute;
+          top:5px;
+          left:10px;
+          font-size: 50px;
+        }
+        .text2{
+          color: black;
+          position: absolute;
+          width: 200px;
+          top:590px;
+          left:100px;
+          font-size: 30px;
+        }
+        .bg-image{
+          position: absolute;
+          top:130px;
+          width:99%;
+          height:400px;
+          opacity: 0.6;
+        }
+
+        .boxfordonating{
+          background-color: rgb(254, 113, 113);
+          width: 35%;
+          height:600px;
+          position: absolute;
+          top:600px;
+          right:100px;
+          }
+
+          .text-3box{
+            position: absolute;
+            top:5px;
+            left:10px;
+            font-size: 50px;
+          }
+          .text3{
+            color: black;
+            position: absolute;
+            width: 200px;
+            top:90px;
+            left:10px;
+            font-size: 30px;
+          }
+          .donor{
+            background-color: #a1292a;
+            width: 50%;
+            height:150px;
+            position: absolute;
+            top:250px;
+            right:150px;
+            text-align:center;
+            }
+            .chart-image{
+              position: absolute;
+              top:20px;
+              right:20px;     
+
+            }
+            
+            .calender{
+              position: absolute;
+              top :500px;
+              right:200px;
+            }
+            .boxformedical{
+              background-color:  rgb(254, 113, 113);
+              width: 130%;
+              height:200px;
+              position: absolute;
+              top:350px;
+              right:535px;
+    
+            }
+            .text-4box{
+              position: absolute;
+              top:5px;
+              left:10px;
+              font-size: 50px;
+            }
+            .text4{
+              color: black;
+              position: absolute;
+              width: 200px;
+              top:350px;
+              right:800px;
+              font-size: 30px;
+            }
+            .boxfortext{
+              background-color: rgb(211, 207, 207);
+              position:absolute;
+              top: 1300px;
+              right:0px ;
+              width: 100%;
+              height: 80px;
+              
+                  
+          }
+          .textbox{
+              position: absolute;
+              top:400x;
+              left:10px;
+              font-size: 20px;
+              margin-bottom:40px;
+          
+            
+          }
+          .para-1{
+            font-size: 20px;
+          }
+           
+        

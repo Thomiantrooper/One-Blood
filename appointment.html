@@ -1,0 +1,154 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+        <!-- title for the website -->
+        <title>Blood Donating System</title>
+        <link rel="stylesheet" href="styles-appointment.css"> <!-- CSS referenced link --> 
+    </head>
+
+    <body> <!-- main -->
+      <div class="icon">
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+             <lord-icon
+             src="https://cdn.lordicon.com/bhfjfgqz.json"
+             trigger="hover"
+             colors="primary:#121331"
+            style="width:30px;height:50px">
+        </lord-icon>
+        </div>
+
+        <header class="ol">
+            <img class="logo" src="src/image/logo.jpg" alt="logo"> <!-- blood donation logo which had used -->
+            <nav >
+                <ul class="nav_links">
+                <div class = "s">
+                    <div class="r">
+                        <!-- Buttons for the pages home, about, gallery, contact us, support -->
+                             <button><li><a class="active1" href="index.html">HOME</a></li></button>
+                             &nbsp;&nbsp;<li><a href="about.html">ABOUT</a></li>
+                             &nbsp;&nbsp;<li><a href="gallery.html">GALLARY</a></li>
+                             &nbsp;&nbsp;<li><a href="contactus.html">CONTACT US</a></li>
+                             &nbsp;&nbsp;<li><a href="support.html">SUPPORT</a></li>
+                    </div>
+                </div>
+                    <div class="q">
+                             <li><a href="commoninterface.html">LOG IN/MEMBER</a></li>
+                    </div>
+                </ul>        
+            </nav>
+        </header>
+       
+        <div class="slider">
+          <figure>
+                <img src="src/image/1-1.jpg">
+                <img src="src/image/2.jpg">
+                <img src="src/image/3.jpg">
+                <img src="src/image/4.jpg">
+                <img src="src/image/1-1.jpg">
+          </figure>
+          </div>
+
+          <div class="appointment-topic">
+            Appointment
+          </div>
+
+  <div class="appointment">
+   
+ 
+  <form id="myForm" method="POST" action="process_form.php" enctype="multipart/form-data">
+    <br>
+    <div class="form-group-1">
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" id="email" placeholder="Email :" required>*
+    </div>
+    <br>
+    <div class="form-group-1">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" id="name" placeholder="Name :" required>*
+    </div>
+    <br>
+    <div class="form-group-1">
+      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" name="contact" id="contact" placeholder="Contact Number :" required>*
+    </div>
+
+    <hr>
+
+    <div class="form-group">
+     
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="bloodGroup" id="bloodGroup" class="option" required>
+        <option value="Blood Group">Blood Group</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+      <label for="bloodGroupCheckbox">
+        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="bloodGroupCheckbox" id="bloodGroupCheckbox" required>
+        I hereby declare that the Blood Group is accurate*
+      </label>
+
+    </div>
+    <br><br><br><br><br>
+    <div class="form-group">
+      <div class="reportbox"><br>
+      <input type="file" name="report" id="report" accept="application/pdf" required>Add your Medical Report approved by a registered doctor*<br>(report must be validated only for 3 days)
+    </div></div>
+    <hr>
+    <div class="form-group">
+      <p class="declaration">Have you consumed:<br>*Alcohol (before 24 hours):
+      <label>
+        &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="alcohol" value="yes" required> Yes
+      </label>
+      
+      <label>
+        <input type="radio" name="alcohol" value="no" required> No
+      </label>
+      </p>
+    </div>
+    <div class="form-group">
+      <p class="declaration">*Are you suffering from a disease:</p>
+      <label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="disease" value="yes" required> Yes
+      </label>
+      
+      <label>
+        <input type="radio" name="disease" value="no" required> No
+      </label>
+    </div>
+    <hr>
+    <div class="form-group">
+      <p class="declaration">Please check the following:</p>
+      <label>
+        <input type="checkbox" name="ageDeclaration" required> I declare that I am not underaged (18+).*
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" name="accuracyDeclaration" required> I declare that the entered data is accurate.*
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" name="termsDeclaration" required> I declare that I approve the terms and conditions.*
+      </label>
+    </div>
+    <div class="submit-buttons">
+      <input type="reset" value="Reset all">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+
+
+          </div>
+
+
+     
+    
+          <div class="boxfortext">
+            <div class="text-box"><p>&nbsp; &#169 2023 BloodDonate,Inc.All rights reserved</p> </div>
+           </div>
+            </div>
+    </body>
+</html>
